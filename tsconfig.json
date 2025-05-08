@@ -21,6 +21,7 @@
     "lib": ["ES2022", "dom"],
     "baseUrl": "src",
     "paths": {
+      "@components/*": ["app/components/*"],
       "@services/*": ["app/services/*"],
       "@models/*": ["app/models/*"],
       "@mocks/*": ["app/mocks/*"]
