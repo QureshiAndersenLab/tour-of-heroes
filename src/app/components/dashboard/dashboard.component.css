@@ -1,0 +1,9 @@
+.top-heroes {
+  display: flex;
+}
+
+.top-heroes a {
+  background-color: antiquewhite;
+  margin: 5px;
+  padding: 10px;
+}
