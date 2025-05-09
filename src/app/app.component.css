@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+}
+
+nav a {
+  background-color: gray;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 300;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+nav a .active {
+  background-color: blue;
+  color: #fff;
+}

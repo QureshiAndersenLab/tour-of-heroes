@@ -1,13 +1,25 @@
+.messages {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  background-color: rgb(149, 175, 240);
+  border-radius: 10px;
+  padding: 10px;
+}
+
 h2 {
   color: #42545c;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 
+.message {
+  padding: 2px 0px;
+}
+
 .clear {
   color: #fff;
-  background-color: gray;
-  margin-bottom: 12px;
+  background-color: rgb(233, 57, 57);
   padding: 10px 7px;
   border-radius: 5px;
   font-size: 1rem;
