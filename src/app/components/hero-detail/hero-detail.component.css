@@ -1,6 +1,12 @@
-.back-btn {
+.btn {
   background-color: #505050;
   color: #fff;
   padding: 10px;
   font-size: 18px;
+  border-radius: 8px;
+}
+
+.btn:first-of-type {
+  background-color: #2164ab;
+  border: 2px solid white;
 }
