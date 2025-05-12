@@ -7,6 +7,14 @@
 
 .heroes li {
   display: flex;
+  align-items: center;
+}
+
+.delete-btn {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: red;
+  color: #fff;
 }
 
 .heroes a {

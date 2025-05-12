@@ -28,6 +28,14 @@ export class HeroDetailComponent implements OnInit {
     this._heroService.getHero(id).subscribe((hero) => (this.hero = hero));
   }
 
+  handleUpdateHero(): void {
+    if (this.hero) {
+      this._heroService
+        .updateHero(this.hero)
+        .subscribe(() => this.handleBack());
+    }
+  }
+
   handleBack(): void {
     this._location.back();
   }

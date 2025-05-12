@@ -5,5 +5,8 @@
     <label for="hero-name">Hero name: </label>
     <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" />
   </div>
-  <button class="back-btn" (click)="handleBack()">Back</button>
+  <div>
+    <button class="btn" (click)="handleUpdateHero()">Update Hero</button>
+    <button class="btn" (click)="handleBack()">Back</button>
+  </div>
 </div>
