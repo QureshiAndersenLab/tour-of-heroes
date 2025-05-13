@@ -1,0 +1,12 @@
+.search-wrapper {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.search-wrapper input {
+  border-radius: 5px;
+  padding: 4px;
+}

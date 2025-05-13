@@ -1,0 +1,16 @@
+<div class="search-wrapper">
+  <label for="search">Search Hero: </label>
+  <input
+    #searchBox
+    type="text"
+    name="search"
+    (input)="search(searchBox.value)"
+    placeholder="Search a hero"
+  />
+
+  <ul class="search-result">
+    <li *ngFor="let hero of heroes$ | async">
+      <app-hero [hero]="hero"></app-hero>
+    </li>
+  </ul>
+</div>

@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { HeroService } from '@services/hero.service';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HeroComponent } from '../hero/hero.component';
 
 @Component({
   selector: 'app-heroes',
   standalone: true,
-  imports: [CommonModule, RouterModule, FormsModule],
+  imports: [CommonModule, RouterModule, FormsModule, HeroComponent],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.css',
 })
@@ -23,17 +24,6 @@ export class HeroesComponent implements OnInit {
 
   getHeroes(): void {
     this._heroService.getHeroes().subscribe((heroes) => (this.heroes = heroes));
-  }
-
-  addHero(name: string): void {
-    name = name.trim();
-    if (!name) return;
-
-    const newHero: Hero = { name } as Hero;
-
-    this._heroService.addHero(newHero).subscribe((hero) => {
-      this.heroes.push(hero);
-    });
   }
 
   deleteHero(hero: Hero): void {
