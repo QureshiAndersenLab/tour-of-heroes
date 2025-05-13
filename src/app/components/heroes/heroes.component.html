@@ -1,16 +1,7 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{ hero.id }}">
-      <span class="badge">{{ hero.id }}. </span>
-      <span class="name">{{ hero.name }}</span>
-    </a>
+    <app-hero [hero]="hero"></app-hero>
     <button class="delete-btn" (click)="this.deleteHero(hero)">Delete</button>
   </li>
 </ul>
-
-<div>
-  <label for="hero">Hero Name:</label>
-  <input type="text" name="hero" #heroName />
-  <button (click)="addHero(heroName.value)">Add Hero</button>
-</div>
